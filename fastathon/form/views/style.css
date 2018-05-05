@@ -1,0 +1,15 @@
+table{
+	border:1px solid gray;
+}
+table td{
+	border:1px solid gray;	
+}
+table tr{
+background: #cacaca;
+}
+table tr:nth-child(2n){
+background: #f9f2f2!important;
+}
+table a{
+	text-decoration: none;
+}

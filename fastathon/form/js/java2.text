@@ -1,0 +1,22 @@
+var app = angular.module("phoneboockAPP", []);
+app.controller("NumCtrl", function($scope, $http) {
+  $scope.add_num = function() {
+  		var d = new Date();
+		var day = d.getUTCDate();
+		var m = d.getMonth();
+		var y = d.getFullYear();
+		var data=day+'/'+m+'/'+y;
+        $.post("", {
+            name: $scope.newName,
+            number: $scope.newPhone,
+            addres:$scope.newAddres,
+            dataNew:data;
+        },
+         function(callback) {
+            console.log("Req Success2", callback);
+            // window.location.reload();
+
+        })
+
+    }
+})

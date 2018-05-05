@@ -1,0 +1,11 @@
+@media only screen and (max-width: 670px) {
+#rakStartupsForm form{
+    width: 330px;
+}
+#allDir{
+  width: 330px;
+}
+#allDir div div{
+    width: 330px;
+}
+}
